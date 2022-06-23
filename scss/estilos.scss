@@ -1,0 +1,40 @@
+@import "./index";
+@import "./sobreMi";
+@import "./nutricion";
+@import "./testimonios";
+@import "./contacto";
+@import "./vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*propiedades body*/
+
+body {
+    font-family: 'Poppins', sans-serif;  
+}
+#grid {
+    display: grid;
+    grid-template-areas: 
+    "headerNav"
+    "main"
+    "foteer"
+    ;
+    grid-template-columns: 100%;
+    height: 100vh;
+    
+}
+
+footer {
+    opacity: 0.6;
+}
+.background__index {
+    background-image: url(../multimedia/fondo2.jpg);
+    background-size:cover;
+    padding: 4rem 1rem 0rem;
+    background-repeat: no-repeat;
+    
+}
