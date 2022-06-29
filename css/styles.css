@@ -218,6 +218,75 @@ text-align: center;
     margin: 2rem;
     line-height: 1.5em;
 }
+#grid__sobreMi {
+    display: grid;
+    grid-template-areas: 
+    "text1 text2"  "text3 text4"
+   ;
+    grid-template-rows: auto auto ;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1.5rem;
+    
+}
+
+.text__nutricionDepor {
+    grid-area: "text1";
+    width: 100%;
+    height: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 10px;
+   
+    padding: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+}
+
+.text__nutricionDepor--1 {
+    grid-area: "text2"
+    width: 100%;
+    height: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;  
+}
+.text__nutricionDepor--2 {
+    grid-area: "text3"
+    width: 100%;
+    height: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+}
+.text__nutricionDepor--3{
+    grid-area: "text4"
+    width: 100%;
+    height: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+}
+.p__nutricionDepor {
+    margin: auto;
+    text-align: center;
+}
+.container__nutrcionDepor {
+    margin: 2rem;
+
+}
 
 /*NUTRICION*/
 
