@@ -38,11 +38,11 @@ opacity: 0.7;
 font-size: smaller;
 text-align: center;
 }
-.footer__text {
 
-}
 
 /* nav */
+
+
 .headerNav {
     background-color:#F7ECDE;
     position: fixed;
@@ -71,7 +71,7 @@ text-align: center;
     margin-right: 3rem;
     list-style: none;
     line-height: 5rem;
-    text-transform: uppercase   ;
+    text-transform: uppercase;
     flex-wrap: wrap;
 } 
 
@@ -102,7 +102,7 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     padding: 2.2rem;
-    margin: 2.2rem;
+    margin: 1rem 2.2rem;
 }
 
 .div__hero {
@@ -152,13 +152,13 @@ text-align: center;
 
 
 /*SOBRE MI*/
+
+
 .nav--sobreMi {
     background-color: #FFDEE9;
     background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
     display: flex;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;  
 }
 
 .h2__sobreMi {
@@ -188,7 +188,7 @@ text-align: center;
 
 .h3__sobreMi {
     font-size: 3.5rem;
-    margin: 1rem 0 1rem 0; 
+    margin: 1.5rem 0 1rem 0; 
     text-align: center;  
     color: black; 
     font-family: sans-serif;
@@ -218,6 +218,7 @@ text-align: center;
     margin: 2rem;
     line-height: 1.5em;
 }
+
 #grid__sobreMi {
     display: grid;
     grid-template-areas: 
@@ -225,8 +226,7 @@ text-align: center;
    ;
     grid-template-rows: auto auto ;
     grid-template-columns: 1fr 1fr ;
-    grid-gap: 1.5rem;
-    
+    grid-gap: 1.5rem; 
 }
 
 .text__nutricionDepor {
@@ -279,26 +279,20 @@ text-align: center;
     flex-direction: column;
     align-items: center;
 }
+
 .p__nutricionDepor {
     margin: auto;
     text-align: center;
 }
+
 .container__nutrcionDepor {
     margin: 2rem;
-
 }
+
 
 /*NUTRICION*/
 
-.background__nutricion {
-    background-image: url(../multimedia/fondoNutricion.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.background__nutricion--plantBased {
-    background-image: url(../multimedia/fondoPlantBased.jpg);
-    background-size: auto;
-}
+
 .nav--nutricion {
     background-color: #FBAB7E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
@@ -306,9 +300,7 @@ text-align: center;
     justify-content: space-between;
     
 }
-.contenedorH2__nutricion {
-    width: 100%;
-}
+
 
 .h2__nutricion {
     font-size: 4rem;
@@ -341,6 +333,18 @@ text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.3s;
 }
+.h5__nutricion {
+    font-size: 4rem;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    margin: 2rem 0 1rem 0; 
+    text-align: center;  
+    color: black; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
 
 .precios__nutricion {
     display: flex;
@@ -782,6 +786,14 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 
 
     /* Index html */
+    .background__index {
+        background-image: url(../multimedia/fondo2_celulares.jpg);
+        background-size:cover;
+        height: 100vh;
+        padding: auto;
+        margin-top: 4   rem;
+        background-repeat: no-repeat;
+    }
 
 
     .div__hero {
@@ -813,9 +825,14 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 
     /*sobre mi*/
 
-
+    .h2__sobreMi {
+        font-size: 3rem;
+    }
+    .container__sobreMi {
+    width:auto;
+    }
     .containerImg__sobreMi {
-        width: 130px;
+        width: 300px;
         height: 100%;
     }
 
@@ -823,12 +840,37 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
 
+    }
+    
+    #grid__sobreMi {
+     display: grid;
+     grid-template-areas: 
+     "text1"
+     "text2"
+     "text3"
+     "text4"
+    ;
+     grid-template-rows: auto;
+     grid-template-columns: auto ;
+     grid-gap: 1.5rem; 
+ }
 
     /*NUTRICION*/
 
-
+    .h2__nutricion {
+        font-size: 3rem;
+        margin: 4rem 0 1rem 0; 
+       
+        
+    }
+    .h3__nutricion--precios {
+        font-size: 1.7rem;
+    }
+    .h5__nutricion {
+        font-size: 2.5rem;     
+    }
+    
     .img__card--nutricion {
         width: 130px;
     }
@@ -837,6 +879,15 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         width: 230px;
         height: auto;
     }
+
+    .ingredientes__nutricion {
+        margin:1rem 1rem;
+    }
+
+   .p__nutricion{
+       margin:0.5rem;
+   }
+
 
 
     /*TESTIMONIOS*/
