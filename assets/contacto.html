@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <meta name="keywords" content="Contactos, Instagram, Instagram Nutricion, Contacto Nutricion">
+     <meta name="description" content="Contacta con rdanutricion para iniciar un plan alimenticio">
+    <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,32 +33,39 @@
     <main class="main"> 
         <section>
             <article class="article__contacto">
-                <h2 class="h2__contacto"> Encontranos en </h2>
-                <p> Instagram como: @rdanutricion o clickea abajo</p>
-                <div class="contacto__imgContainer">
-                     <img class="contacto__img--ig" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="instagramLogo">
+                <h2 class="h2__contacto"> Contactanos! </h2>
+                
+                
+                <div class="containerForm__contacto">
+                    
+                    <form action="https://formspree.io/f/xbjwvggz"
+                    method="POST" method="get">
+                    <h3 class="h3__contacto">Dejanos tu mensaje!</h3>
+                    
+                    <label for="name">Nombre</label>
+                    <input class="nombre__contacto" type="text" id="name">
+                    
+                    <label for="email">Numero de Teléfono</label>
+                    <input class="nombre__contacto"type="number" id="name">
+                    
+                    <label for="email">e-Mail</label>
+                    <input class="nombre__contacto"type="email" name="email" id="email">
+                    
+                    <label>tu objetivo:
+                        <textarea class="text__contacto" name="message"></textarea>
+                    </label>
+                    
+                    <input class= "buton__contacto"type="submit">
+                    <div class="contacto__imgContainer">
+                         <img class="contacto__img--ig" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="instagramLogo">
+                         <img class="contacto__img--ig" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="instagramLogo">
+                    </div>
+                    
                 </div>
-            </article>
-            <article class="containerForm__contacto">
-                <form action="" method="get" enctype="text/plain">
-                        <legend>Informacion Personal</legend>
-                        <label for="sexo">Sexo:</label><br>
-                        <input type="radio" name="Hombre" id="sexo">Hombre
-                        <input type="radio" name="Mujer" id="sexo">Mujer
-                        <input type="radio" name="Otro" id="sexo">Otro
-                        <br><br>
-                        <label for="name">Nombre</label><br>
-                        <input type="text" id="name"><br>
-                        <label for="email">eMail</label> <br>
-                        <input type="email" id="email">
-
-                        </select>
-                        <br><br>
-                        <input type="submit">
             </article>
         </section>
     </main>
-
+        
 
     <footer class="footer"><br><br><br>
         <small class="footer__text">
