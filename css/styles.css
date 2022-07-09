@@ -9,15 +9,18 @@
 body {
     font-family: 'Poppins', sans-serif;  
 }
+
 .background__index {
+    
+    
     background-image: url(../multimedia/fondo2.jpg);
     background-size:cover;
     height: 100vh;
     padding: auto;
-    margin-top: 5rem;
+    margin-top: 0;
     background-repeat: no-repeat;
 }
-#grid {
+#gridIndex {
     display: grid;
     grid-template-areas: 
     "headerNav"
@@ -27,19 +30,21 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    background-color:#F7ECDE ;
 }
 
 footer {
-opacity: 1;
-margin: 0;
 position: relative;
 bottom: 0;
-opacity: 0.7;
 font-size: smaller;
 text-align: center;
 }
 
-
+.wave {
+    position: relative;
+    width: 100%;
+    bottom: 4.5rem;
+}
 /* nav */
 
 
@@ -51,6 +56,7 @@ text-align: center;
     top: 0;
     left: 0;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 
 .nav {
@@ -102,7 +108,7 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     padding: 2.2rem;
-    margin: 1rem 2.2rem;
+    margin: 5rem 2.2rem;
 }
 
 .div__hero {
@@ -244,7 +250,7 @@ text-align: center;
 }
 
 .text__nutricionDepor--1 {
-    grid-area: "text2"
+    grid-area: "text2";
     width: 100%;
     height: auto;
     background-color: #FFDEE9;
@@ -256,7 +262,7 @@ text-align: center;
     align-items: center;  
 }
 .text__nutricionDepor--2 {
-    grid-area: "text3"
+    grid-area: "text3";
     width: 100%;
     height: auto;
     background-color: #FFDEE9;
@@ -268,7 +274,7 @@ text-align: center;
     align-items: center;
 }
 .text__nutricionDepor--3{
-    grid-area: "text4"
+    grid-area: "text4";
     width: 100%;
     height: auto;
     background-color: #FFDEE9;
@@ -306,7 +312,7 @@ text-align: center;
     font-size: 4rem;
     line-height: 1.15;
     letter-spacing: 1px;
-    margin: 2rem 0 1rem 0; 
+    margin: 0.8rem 0 1rem 0; 
     text-align: center;  
     color: black; 
     font-family: 'Work Sans', sans-serif;
@@ -451,11 +457,13 @@ text-align: center;
     color: black; 
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    margin:7rem 0 2rem 0;
+    margin:5.5rem 0 2rem 0;
 }
 
 .h3__testimonios {
     text-align: center;
+   font-weight: 400;
+   font-size: 2.5rem;
 }
 
 .container__testimonios {
@@ -690,8 +698,7 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 
 
 /*responsive index*/
-
-@media (max-width: 840px) { 
+@media (max-width: 833px) { 
 
     #grid {
         display: grid;
@@ -742,6 +749,18 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         padding: 0.1rem;
         font-size: 0.6rem; 
     }
+    footer {
+        position: relative;
+        bottom: 0;
+        font-size: smaller;
+        text-align: center;
+        }
+        
+        .wave {
+            position: relative;
+            width: 100%;
+            bottom: 0.2rem;
+        }
 
     
     /* hero del index*/
@@ -750,36 +769,34 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     .article {
         align-items: center;
         padding: 1.2rem;
-        margin: 1.2rem;
+        margin: 3.2rem 1.2rem 1.2rem;
     }
 
     .div__hero {
         width: 100%;
-        padding-right: 1.5rem;
-        padding-left: 0.1rem;
+
         margin-right: auto;
         margin-left: auto;
     }
 
     .hero__h2 {
-        font-size: 3rem;
-        line-height: 1.15;
-        margin-bottom: 1rem;   
-    }  
-
+        align-self: center;
+        font-style: normal;
+        font-family: sans-serif;
+        font-size: 3.5rem;
+        margin: 3rem 0 3rem 0;
+    }
+    
     .hero__boton {
-        font-family: 'Work Sans', sans-serif;
-        margin: 1.2rem 0.6rem 0.6rem 0.3rem;
-        padding: 0.7rem 0.4rem;
-        font-weight: 400;
-        display: flex;
-        align-self: flex-start; 
+        margin-top: 3rem;
+        
+    }
+    
+    .article__p {
+        font-size: 16px;
+        align-content: flex-start;
     }
 
-    .article__p {
-        font-size: 0.8rem;
-        margin-left: 0rem;
-        align-self: center;
 
     }
     
@@ -791,7 +808,7 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         font-size: 3rem;
         line-height: 1.15;
         letter-spacing: 1px;
-        margin: 3rem 0 1rem 0; 
+        margin: 2.5rem 0 1rem 0; 
         text-align: center;  
         color: black; 
         font-family: 'Work Sans', sans-serif;
@@ -832,7 +849,28 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 
 }
 
-@media (max-width: 460px) {
+/*correccion footer*/
+
+@media (max-width: 654px) { 
+
+   
+    footer {
+        position: relative;
+        bottom: 0;
+        font-size: smaller;
+        text-align: center;
+        }
+        
+        .wave {
+            position: relative;
+            width: 100%;
+            bottom: .9rem;
+        }
+
+    }
+
+
+@media (max-width: 395px) {
 
 
     /* Index html */
@@ -841,36 +879,53 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         background-size:cover;
         height: 100vh;
         padding: auto;
-        margin-top: 4   rem;
+        margin-top: 0;
+        margin-left: -2rem;
         background-repeat: no-repeat;
     }
 
 
     .div__hero {
         width: 100%;
-        align-content: center;
+        align-content: flex-start;
         padding-right: 0;
         padding-left: 0;  
         
     }
     
     .hero__h2 {
-        align-self: center;
+        align-self: flex-start;
         font-style: normal;
         font-family: sans-serif;
         font-size: 3.5rem;
-        margin: 1rem 0 3rem 0;
+        margin: 3rem 0 3rem 41px;
     }
     
     .hero__boton {
         margin-top: 3rem;
+
         
     }
     
     .article__p {
         font-size: 16px;
         align-content: flex-start;
+   
     }
+    
+    footer {
+        position: relative;
+        bottom: 0;
+        
+        
+        }
+        
+        .wave {
+            display: none;
+            position: relative;
+            width: 100%;
+            bottom: 0rem
+        }
 
 
     /*sobre mi*/
