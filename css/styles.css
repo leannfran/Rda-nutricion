@@ -307,16 +307,16 @@ text-align: center;
     
 }
 
-
 .h2__nutricion {
     font-size: 4rem;
     line-height: 1.15;
     letter-spacing: 1px;
-    margin: 0.8rem 0 1rem 0; 
-    text-align: center;  
-    color: black; 
+    margin: auto;
+    text-align: center;
+    color: black;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+
     
 }
 .h3__nutricion--precios {
@@ -805,7 +805,7 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     
     
     .h2__nutricion {
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 1.15;
         letter-spacing: 1px;
         margin: 2.5rem 0 1rem 0; 
@@ -877,7 +877,7 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     .background__index {
         background-image: url(../multimedia/fondo2_celulares.jpg);
         background-size:cover;
-        height: 100vh;
+        height: 110vh;
         padding: auto;
         margin-top: 0;
         margin-left: -2rem;
@@ -1005,6 +1005,11 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         font-size: 3rem;
     }
 }
-
+@media (max-width: 370px) {
+ footer {
+     display: block;
+     bottom: 0;
+ }
+}
         
 /*fin del media*/

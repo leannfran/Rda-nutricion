@@ -16,7 +16,18 @@
 body {
     font-family: 'Poppins', sans-serif;  
 }
-#grid {
+
+.background__index {
+    
+    
+    background-image: url(../multimedia/fondo2.jpg);
+    background-size:cover;
+    height: 100vh;
+    padding: auto;
+    margin-top: 0;
+    background-repeat: no-repeat;
+}
+#gridIndex {
     display: grid;
     grid-template-areas: 
     "headerNav"
@@ -24,17 +35,20 @@ body {
     "foteer"
     ;
     grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
-    
+    background-color:#F7ECDE ;
 }
 
 footer {
-    opacity: 0.6;
+position: relative;
+bottom: 0;
+font-size: smaller;
+text-align: center;
 }
-.background__index {
-    background-image: url(../multimedia/fondo2.jpg);
-    background-size:cover;
-    padding: 4rem 1rem 0rem;
-    background-repeat: no-repeat;
-    
+
+.wave {
+    position: relative;
+    width: 100%;
+    bottom: 4.5rem;
 }
