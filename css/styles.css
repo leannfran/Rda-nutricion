@@ -307,11 +307,20 @@ text-align: center;
     
 }
 
+.article__nutricion { 
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.2rem;
+    margin: 2rem 2.2rem;
+    }
 .h2__nutricion {
     font-size: 4rem;
     line-height: 1.15;
     letter-spacing: 1px;
-    margin: auto;
+    margin:0 auto;
     text-align: center;
     color: black;
     font-family: 'Work Sans', sans-serif;
@@ -322,7 +331,7 @@ text-align: center;
 .h3__nutricion--precios {
     font-size: 2rem;
     color: black; 
-    font-family: , sans-serif;
+    
     font-weight: 400;
     
     
@@ -330,7 +339,7 @@ text-align: center;
 .h4__nutricion--precios {
     font-size: 1.2rem;
     color: black; 
-    font-family:sans-serif;
+
     font-weight: 400;
     margin: 0.5rem 0;
     text-decoration: none;
@@ -847,7 +856,7 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         font-size: 4rem;
     }
 
-}
+
 
 /*correccion footer*/
 
